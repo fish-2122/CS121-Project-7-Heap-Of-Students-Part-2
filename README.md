@@ -1,4 +1,5 @@
-# CS121-Project-6-Heap-Of-Students
+# CS121-Project-7-Heap-Of-Students-Part-2
+### This is part 2 of the first heap of students project
 
 ```mermaid
 classDiagram
