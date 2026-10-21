@@ -53,7 +53,8 @@ when we get to the credits part, instead of putting it directly into the credits
 ```
 include iostream, fstream, sstream, vector, algorithm, Address.h, Date.h, Student.h
 
-void fillVector(vector<Student>& v, string fileName)
+void fillVector(reference to vector of students, string fileName)
+void printVector(reference to vector of students)
 
 int main() {
     vector of students
@@ -70,5 +71,10 @@ void fillVector(vector<Student>& v, string fileName) {
         add a Student to v with currentLine as it's paramter
         initialize that student
         clear currentLine
+}
+
+void printVector(vector<Student> v) {
+    for each item in v
+        print attributes of item
 }
 ```
