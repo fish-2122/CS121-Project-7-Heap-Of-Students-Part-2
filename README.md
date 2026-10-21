@@ -48,3 +48,27 @@ put studentString into ss
 use getline() with a comma delininator to give all the variables their values from the string
 when we get to the credits part, instead of putting it directly into the credits variable, put it into creditsS. then put creditsS into converter, and then converter into credits. that makes it into an int
 ```
+
+## main()
+```
+include iostream, fstream, sstream, vector, algorithm, Address.h, Date.h, Student.h
+
+void fillVector(vector<Student>& v, string fileName)
+
+int main() {
+    vector of students
+
+
+}
+
+void fillVector(vector<Student>& v, string fileName) {
+    string currentLine
+    ifstream inFile
+
+    open fileName in inFile
+    while getline(inFile, currentLine)
+        add a Student to v with currentLine as it's paramter
+        initialize that student
+        clear currentLine
+}
+```
