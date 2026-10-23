@@ -3,7 +3,10 @@
 
 class Date {
 	private:
-		std::string date;
+		std::string dateString;
+		std::string day;
+		std::string month;
+		std::string year;
 	public:
 		Date();
 		void init(std::string dateInput);
