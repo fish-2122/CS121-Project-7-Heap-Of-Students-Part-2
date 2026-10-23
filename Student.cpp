@@ -61,7 +61,7 @@ std::string Student::getLastFirst() {
     return returnString;
 }
 
-std::string Student::printName() {
+std::string Student::getName() {
     std::string returnString = Student::firstName + ", " + Student::lastName;
     return returnString;
 }

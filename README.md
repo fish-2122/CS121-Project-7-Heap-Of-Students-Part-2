@@ -81,7 +81,8 @@ void printVector(vector<Student>& v) {
 }
 
 void printStudentNames(vector<Student>& v) {
-    
+    sort v using sortByName
+    call printVector
 }
 
 bool sortByName(Student a, Student b) {

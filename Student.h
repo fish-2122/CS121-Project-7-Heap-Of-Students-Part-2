@@ -19,7 +19,7 @@ class Student {
         void init(std::string studentStringInput);
         void printStudent();
         std::string getLastFirst();
-        std::string printName();
+        std::string getName();
 };
 
 #endif

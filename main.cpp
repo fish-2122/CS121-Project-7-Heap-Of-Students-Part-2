@@ -10,6 +10,7 @@
 void fillVector(std::vector<Student>& v, std::string fileName);
 void printVector(std::vector<Student>& v);
 void printStudentNames(std::vector<Student>& v);
+bool sortByName(Student a, Student b);
 
 int main() {
     std::vector<Student> studentVector;
@@ -39,7 +40,13 @@ void printVector(std::vector<Student>& v) {
 }
 
 void printStudentNames(std::vector<Student>& v) {
+    std::sort(v, v.size(), sortByName);
+
     for (auto& item : v) {
-        item.printName();
+        item.getName();
     }
+}
+
+bool sortByName(Student a, Student b) {
+    return (a.getName() < b.getName());
 }
