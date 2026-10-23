@@ -20,6 +20,7 @@ class Student {
         void printStudent();
         std::string getLastFirst();
         std::string getName();
+        std::string getLastName();
 };
 
 #endif

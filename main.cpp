@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <string>
 #include <vector>
 #include <algorithm>
 #include "Address.h"
@@ -11,12 +12,13 @@ void fillVector(std::vector<Student>& v, std::string fileName);
 void printVector(std::vector<Student>& v);
 void printStudentNames(std::vector<Student>& v);
 bool sortByName(Student a, Student b);
+void findStudent(std::vector<Student>& v);
 
 int main() {
     std::vector<Student> studentVector;
     fillVector(studentVector, "students.csv");
     
-
+    findStudent(studentVector);
 
     return 0;
 }
@@ -40,7 +42,7 @@ void printVector(std::vector<Student>& v) {
 }
 
 void printStudentNames(std::vector<Student>& v) {
-    std::sort(v, v.size(), sortByName);
+    std::sort(v.begin(), v.end(), sortByName);
 
     for (auto& item : v) {
         item.getName();
@@ -49,4 +51,20 @@ void printStudentNames(std::vector<Student>& v) {
 
 bool sortByName(Student a, Student b) {
     return (a.getName() < b.getName());
+}
+
+void findStudent(std::vector<Student>& v) {
+    std::string lastName = "";
+    std::stringstream ss;
+
+    std::cout << "Enter last name: ";
+    std::cin >> lastName;
+
+    for (auto& item : v) {
+        std::string currentLastName = item.getLastName();
+
+        if (lastName == currentLastName) {
+            item.printStudent();
+        }
+    }
 }

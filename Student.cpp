@@ -31,12 +31,19 @@ void Student::init(std::string studentStringInput) {
 
     getline(ss, Student::firstName, ',');
     getline(ss, Student::lastName, ',');
+    Student::lastName.erase(0, lastName.find_first_not_of(" \t\n\r\f\v"));
     getline(ss, Student::streetAddress, ',');
+    Student::streetAddress.erase(0, streetAddress.find_first_not_of(" \t\n\r\f\v"));
     getline(ss, Student::city, ',');
+    Student::city.erase(0, city.find_first_not_of(" \t\n\r\f\v"));
     getline(ss, Student::state, ',');
+    Student::state.erase(0, state.find_first_not_of(" \t\n\r\f\v"));
     getline(ss, Student::zipCode, ',');
+    Student::zipCode.erase(0, zipCode.find_first_not_of(" \t\n\r\f\v"));
     getline(ss, Student::dateOfBirth, ',');
+    Student::dateOfBirth.erase(0, dateOfBirth.find_first_not_of(" \t\n\r\f\v"));
     getline(ss, Student::dateOfGraduation, ',');
+    Student::dateOfGraduation.erase(0, dateOfGraduation.find_first_not_of(" \t\n\r\f\v"));
 
     getline(ss, Student::creditsS, ',');
     converter << Student::creditsS;
@@ -64,4 +71,8 @@ std::string Student::getLastFirst() {
 std::string Student::getName() {
     std::string returnString = Student::firstName + ", " + Student::lastName;
     return returnString;
+}
+
+std::string Student::getLastName() {
+    return Student::lastName;
 }

@@ -51,12 +51,13 @@ when we get to the credits part, instead of putting it directly into the credits
 
 ## main()
 ```
-include iostream, fstream, sstream, vector, algorithm, Address.h, Date.h, Student.h
+include iostream, fstream, sstream, string, vector, algorithm, Address.h, Date.h, Student.h
 
 void fillVector(reference to vector of students, string fileName)
 void printVector(reference to vector of students)
 void printStudentNames(reference to vector of students)
 bool sortByName(Student a, Student b)
+void findStudent(refernce to vector of students)
 
 int main() {
     vector of students
@@ -87,5 +88,21 @@ void printStudentNames(vector<Student>& v) {
 
 bool sortByName(Student a, Student b) {
     return true if Student a's name is less than Student b's name
+}
+
+void findStudent(vector v) {
+    string lastName = ""
+    sstream ss
+
+    print "enter last name"
+    cin >> lastName
+
+    for each item in vector
+        clear ss
+        string currentLastName
+        use getLastFirst method on item and put it in ss
+        use getline on ss and put it in lastName with the delimeter ','
+        if currentLastName is equal to last name
+            print info of item
 }
 ```

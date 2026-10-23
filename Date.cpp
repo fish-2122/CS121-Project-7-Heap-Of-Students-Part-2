@@ -13,7 +13,7 @@ Date::Date() {
 void Date::init(std::string dateInput) {
     Date::dateString = dateInput;
 
-    std::sstream ss;
+    std::stringstream ss;
     ss.str(dateString);
 
     getline(ss, Date::day, ',');
@@ -22,5 +22,5 @@ void Date::init(std::string dateInput) {
 }
 
 void Date::printDate() {
-    std::cout << Date::date << std::endl;
+    std::cout << dateString << std::endl;
 }
