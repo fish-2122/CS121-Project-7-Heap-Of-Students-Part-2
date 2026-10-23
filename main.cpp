@@ -17,8 +17,10 @@ void findStudent(std::vector<Student>& v);
 int main() {
     std::vector<Student> studentVector;
     fillVector(studentVector, "students.csv");
-    
-    findStudent(studentVector);
+
+    //printStudentNames(studentVector);
+    //printVector(studentVector);
+    //findStudent(studentVector);
 
     return 0;
 }
@@ -50,7 +52,7 @@ void printStudentNames(std::vector<Student>& v) {
 }
 
 bool sortByName(Student a, Student b) {
-    return (a.getName() < b.getName());
+    return (a.getLastName() < b.getLastName());
 }
 
 void findStudent(std::vector<Student>& v) {
