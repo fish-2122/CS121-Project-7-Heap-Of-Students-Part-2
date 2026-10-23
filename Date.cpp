@@ -16,8 +16,8 @@ void Date::init(std::string dateInput) {
     std::stringstream ss;
     ss.str(dateString);
 
-    getline(ss, Date::day, ',');
-    getline(ss, Date::month, ',');
+    getline(ss, Date::month, '/');
+    getline(ss, Date::day, '/');
     getline(ss, Date::year);
 }
 

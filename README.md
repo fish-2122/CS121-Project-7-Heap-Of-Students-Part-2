@@ -55,6 +55,50 @@ clear the whitespace in each variable so there isn't a space before each value
 when we get to the credits part, instead of putting it directly into the credits variable, put it into creditsS. then put creditsS into converter, and then converter into credits. that makes it into an int
 ```
 
+## Student::printStudent()
+```
+prints all the variables of the student
+```
+
+## Student::getLastFirst()
+```
+returns the last name and then the first name as strings
+```
+
+## Student::getName()
+```
+returns first and last name as string
+```
+
+## Student::getLastName()
+```
+returns last name as string
+```
+
+## Date::init(std::string dateInput)
+```
+fill dateString with dateInput
+
+create a stringstream and fill it with dateInput
+
+fill date variables using getline() on the stringstream with the delimeter /
+```
+
+## Date::printDate()
+```
+prints date
+```
+
+## Address::init(std::string streetAddressInput, std::string cityInput, std::string stateInput, std::string zipCodeInput)
+```
+puts the values of the parameters in their respective variables
+```
+
+## Address::printAddress()
+```
+prints out all the address variables
+```
+
 ## main()
 ```
 include iostream, fstream, sstream, string, vector, algorithm, Address.h, Date.h, Student.h
