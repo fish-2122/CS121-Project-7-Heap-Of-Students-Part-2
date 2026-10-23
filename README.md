@@ -6,6 +6,9 @@ classDiagram
 
 class Date {
     - string date
+    - string day
+    - string month
+    - string year
     + Date()
     + init(string dateInput)
     + printDate()
@@ -37,6 +40,8 @@ class Student {
     + init(string studentStringInput)
     + printStudent()
     + getLastFirst() : string
+    + getName() : string
+    + getLastName() : string
 }
 ```
 
@@ -46,6 +51,7 @@ put studentStringInput into studentString
 clear ss and converter to make sure they are empty
 put studentString into ss
 use getline() with a comma delininator to give all the variables their values from the string
+clear the whitespace in each variable so there isn't a space before each value
 when we get to the credits part, instead of putting it directly into the credits variable, put it into creditsS. then put creditsS into converter, and then converter into credits. that makes it into an int
 ```
 
@@ -58,11 +64,28 @@ void printVector(reference to vector of students)
 void printStudentNames(reference to vector of students)
 bool sortByName(Student a, Student b)
 void findStudent(refernce to vector of students)
+void printMenu()
 
 int main() {
     vector of students
+    fill vector
 
+    make keepGoing variable
+    while keepGoing
+        userInput variable
+        print "enter input"
+        store input in userInput
 
+        if userInput is 0
+            keepGoing = false
+        if useInput is 1
+            printVector method
+        if useInput is 2
+            printStudentNames method
+        if useInput is 3
+            findStudent method
+        else
+            print "not a valid input"
 }
 
 void fillVector(vector<Student>& v, string fileName) {
@@ -104,5 +127,9 @@ void findStudent(vector v) {
         use getline on ss and put it in lastName with the delimeter ','
         if currentLastName is equal to last name
             print info of item
+}
+
+void printMenu() {
+    this will print the menu options
 }
 ```
