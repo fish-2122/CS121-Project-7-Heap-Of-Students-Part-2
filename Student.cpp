@@ -60,3 +60,8 @@ std::string Student::getLastFirst() {
     std::string returnString = Student::lastName + ", " + Student::firstName;
     return returnString;
 }
+
+std::string Student::printName() {
+    std::string returnString = Student::firstName + ", " + Student::lastName;
+    return returnString;
+}

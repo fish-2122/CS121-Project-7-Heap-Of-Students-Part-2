@@ -9,11 +9,13 @@
 
 void fillVector(std::vector<Student>& v, std::string fileName);
 void printVector(std::vector<Student>& v);
+void printStudentNames(std::vector<Student>& v);
 
 int main() {
     std::vector<Student> studentVector;
     fillVector(studentVector, "students.csv");
-    printVector(studentVector);
+    
+
 
     return 0;
 }
@@ -31,6 +33,12 @@ void fillVector(std::vector<Student>& v, std::string fileName) {
 }
 
 void printVector(std::vector<Student>& v) {
+    for (auto& item : v) {
+        item.printStudent();
+    }
+}
+
+void printStudentNames(std::vector<Student>& v) {
     for (auto& item : v) {
         item.printStudent();
     }
