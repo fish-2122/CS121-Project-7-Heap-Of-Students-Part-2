@@ -29,14 +29,19 @@ int main() {
         if (userInput == '0') {
             keepGoing = false;
         } else if (userInput == '1') {
+            std::cout << std::endl;
             printStudentNames(studentVector);
         } else if (userInput == '2') {
+            std::cout << std::endl;
             printVector(studentVector);
         } else if (userInput == '3') {
+            std::cout << std::endl;
             findStudent(studentVector);
         } else {
+            std::cout << std::endl;
             std::cout << "Not a valid input" << std::endl;
         }
+        std::cout << std::endl;
     }
 
     return 0;
