@@ -73,7 +73,7 @@ void fillVector(vector<Student>& v, string fileName) {
         clear currentLine
 }
 
-void printVector(vector<Student> v) {
+void printVector(vector<Student>& v) {
     for each item in v
         print attributes of item
 }
