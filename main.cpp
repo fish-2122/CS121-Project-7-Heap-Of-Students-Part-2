@@ -40,6 +40,6 @@ void printVector(std::vector<Student>& v) {
 
 void printStudentNames(std::vector<Student>& v) {
     for (auto& item : v) {
-        item.printStudent();
+        item.printName();
     }
 }

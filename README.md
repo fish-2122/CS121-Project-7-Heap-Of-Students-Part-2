@@ -55,6 +55,8 @@ include iostream, fstream, sstream, vector, algorithm, Address.h, Date.h, Studen
 
 void fillVector(reference to vector of students, string fileName)
 void printVector(reference to vector of students)
+void printStudentNames(reference to vector of students)
+bool sortByName(Student a, Student b)
 
 int main() {
     vector of students
@@ -76,5 +78,13 @@ void fillVector(vector<Student>& v, string fileName) {
 void printVector(vector<Student>& v) {
     for each item in v
         print attributes of item
+}
+
+void printStudentNames(vector<Student>& v) {
+    
+}
+
+bool sortByName(Student a, Student b) {
+    return true if Student a's name is less than Student b's name
 }
 ```
