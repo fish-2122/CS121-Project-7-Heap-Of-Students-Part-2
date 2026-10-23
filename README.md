@@ -39,9 +39,9 @@ class Student {
     + Student()
     + init(string studentStringInput)
     + printStudent()
-    + getLastFirst() : string
-    + getName() : string
-    + getLastName() : string
+    + getLastFirst() string
+    + getName() string
+    + getLastName() string
 }
 ```
 
